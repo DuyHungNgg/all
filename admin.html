@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin </title>
+  <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+  <header>
+    <h1>ADMIN </h1>
+    <nav>
+      <ul>
+        <li><a href="thongke.html">Thống kê</a></li>
+        <li><a href="qlsv.html">Quản lý sinh viên</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="content">
+    <div class="container">
+      <h1 style="margin: 20px 10px;">CHỈNH SỬA BÀI THI</h1>
+  
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Tìm kiếm theo tên">
+      </div>
+  
+      <div class="status-filter">
+        <select id="status-filter-select">
+          <option value="">Tất cả</option>
+          <option value="open">Mở</option>
+          <option value="closed">Đóng</option>
+        </select>
+      </div>
+  
+      <ul class="exam-list" id="exam-list">
+        <!-- Danh sách các kỳ thi sẽ được thêm vào đây bằng JavaScript -->
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Admin Dashboard</p>
+  </footer>
+  <script src="admin.js"></script>
+</body>
+</html>
