@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="qlsv.css">
 </head>
 <body>
-    <header>
-        <h1>Quản lí danh sách sinh viên</h1>
-    </header>
-    <div class="container">
+    
+    <h2>Quản lí danh sách sinh viên</h2>
+
         <table id="student-table">
             <thead>
                 <tr>
@@ -20,24 +19,24 @@
                     <th style="width: 100px;">SĐT</th>
                 </tr>
             </thead>
+            <tbody>
+
+            </tbody>
         </table>
    
-        <div id="form-container">
-            <h2>Thêm mới hoặc sửa thông tin sinh viên</h2>
-            <div id="student-table">
-                <input type="text" id="ID" placeholder="Mã SV">
-                <input type="text" id="name" placeholder="Tên sinh viên">
-                <input type="text" id="course" placeholder="Lớp">
-                <input type="number" id="phone" placeholder="SĐT">
-                <input type="hidden" id="edit-index">
-            </div>
-        </div>
-        <div class="container-back">
-            <button class="lbutton"><a href="admin.html">Trang chủ</a></button>
-            <button class="rbutton">Lưu</button>
-        </div>
+    <div id="form-container">
+        <h3>Thêm mới hoặc sửa thông tin sinh viên</h3>
+        <input type="text" id="ID" placeholder="Mã SV">
+        <input type="text" id="name" placeholder="Tên sinh viên">
+        <input type="text" id="course" placeholder="Lớp">
+        <input type="number" id="phone" placeholder="SĐT">
+        <button id="save-btn">Lưu</button>
+        <input type="hidden" id="edit-index">
     </div>
-        
+    <h1>
+        <button><a href="admin.html">Trang chủ</a></button>
+    </h1>
+
     <script src="qlsv.js"></script>
 </body>
 </html>
